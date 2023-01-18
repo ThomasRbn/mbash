@@ -1,0 +1,9 @@
+Package: mbash
+Maintainer: Thomas ROBINEAU <robineau1u@etu.univ-lorraine.fr> 
+Architecture: amd64
+Description: A mBash developed in C
+Version: 0.1.0
+Depends: libc6
+Section: development
+Priority: optional
+

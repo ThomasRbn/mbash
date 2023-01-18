@@ -1,0 +1,1 @@
+deb [signed-by=/etc/apt/trusted.gpg.d/mbash.gpg] https://thomasrbn.github.io/mbash ./

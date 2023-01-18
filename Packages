@@ -1,0 +1,14 @@
+Package: mbash
+Version: 0.1.0
+Architecture: amd64
+Maintainer: Thomas ROBINEAU <robineau1u@etu.univ-lorraine.fr>
+Depends: libc6
+Filename: ./mbash_0.0.1-amd64.deb
+Size: 538
+MD5sum: 499e005e85c5766b518680bc672536fa
+SHA1: e5f7af8ff88e4d31b95a5fd29116cbfcf8b628b2
+SHA256: 17a94359a681e5191e401e3ad778dfa90b5ee6ec28d783dac684f2f775142ad4
+Section: development
+Priority: optional
+Description: A mBash developed in C
+
