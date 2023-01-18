@@ -1,0 +1,6 @@
+Package: mbash
+Version: 0.1.0
+Architecture: amd64
+Maintainer: Thomas ROBINEAU <robineau1u@etu.univ-lorraine.fr>
+Description: A mini bash dev in C
+Depends: libc6

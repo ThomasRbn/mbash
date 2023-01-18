@@ -1,0 +1,14 @@
+Backup prkey
+gpg --export-secret-keys "robineau1u@etu.univ-lorraine.fr" > my-private-key.asc
+
+gpg --armor --export "robineau1u@etu.univ-lorraine.fr" > KEY.gpg
+
+dpkg-scanpackages --multiversion . > Packages
+gzip -k -f Packages
+
+apt-ftparchive release . > Release
+
+gpg --default-key "robineau1u@etu.univ-lorraine.fr" -abs -o - Release > Release.gpg
+gpg --default-key "robineau1u@etu.univ-lorraine.fr" --clearsign -o - Release > InRelease
+
+echo "deb [signed-by=/etc/apt/trusted.gpg.d/mbash.gpg] https://thomasrbn.github.io/mbash ./" > my_list_file.list
